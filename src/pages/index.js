@@ -1,20 +1,73 @@
 import React from "react"
-import { Link } from "gatsby"
 
 import Layout from "../components/layout"
-import Image from "../components/image"
+
 import SEO from "../components/seo"
+import Info from "../components/info"
 
 const IndexPage = () => (
   <Layout>
     <SEO title="Home" keywords={[`gatsby`, `application`, `react`]} />
-    <h1>Hi people</h1>
-    <p>Welcome to your new Gatsby site.</p>
-    <p>Now go build something great.</p>
-    <div style={{ maxWidth: `300px`, marginBottom: `1.45rem` }}>
-      <Image />
+
+    <div
+      style={{
+        padding: "1rem",
+        display: "flex",
+        alignItems: "center",
+        justifyContent: "center",
+        height: "25vh",
+        width: "100%",
+        background: "blue",
+      }}
+    >
+      <h3>Why Join Our Gym?</h3>
     </div>
-    <Link to="/page-2/">Go to page 2</Link>
+    <Info />
+    <div
+      style={{
+        padding: "2rem",
+        height: "25rem",
+        background: "red",
+        display: "flex",
+        justifyContent: "space-between",
+      }}
+    >
+      <div style={{ justifyContent: "center" }}>
+        {" "}
+        <h1 />
+      </div>
+      <div
+        style={{
+          padding: ".5rem",
+          height: "200px",
+          width: "240px",
+          background: "blue",
+        }}
+      >
+        <h4 style={{ textAlign: "center", margin: 0 }}>Raw Environment</h4>
+        <p>We believe in the power of 'hole in the wall'</p>
+      </div>
+      <div
+        style={{
+          padding: "1rem",
+          height: "200px",
+          width: "240px",
+          background: "blue",
+        }}
+      >
+        <h1>Hey nigga</h1>
+      </div>
+      <div
+        style={{
+          padding: "1rem",
+          height: "200px",
+          width: "240px",
+          background: "blue",
+        }}
+      >
+        <h1>Hey nigga</h1>
+      </div>
+    </div>
   </Layout>
 )
 

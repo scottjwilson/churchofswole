@@ -1,7 +1,30 @@
-/**
- * Implement Gatsby's Node APIs in this file.
- *
- * See: https://www.gatsbyjs.org/docs/node-apis/
- */
+const path = require("path")
 
-// You can delete this file if you're not using it
+exports.createPages = ({ graphql, actions }) => {
+  const { createPage } = actions
+
+  return graphql(`
+    {
+      allContentfulTrainer {
+        edges {
+          node {
+            id
+            name
+          }
+        }
+      }
+    }
+  `)
+    .then(result => {
+      result.data.allContentfulTrainer.edges.forEach(({ node }) => {
+        createPage({
+          path: `trainers/${node.name}`,
+          component: path.resolve("src/templates/trainer-template.js"),
+          context: {
+            id: node.id,
+          },
+        })
+      })
+    })
+    .catch(err => console.log(err))
+}
