@@ -17,7 +17,7 @@ const IndexPage = ({ data }) => (
       title="Transformations Start from The Spirit"
     />
     <div className="join bg-black text-white px-4">
-      <h2 className="mr-16 md:text-xl">Ready To Be Initiated?</h2>
+      <p className="mr-16 sm:text-md">Ready To Be Initiated?</p>
       <button class="cta bg-orange-dark hover:shadow-lg text-white py-2 px-4 border border-blue-darker rounded">
         Join Now!
       </button>
@@ -26,7 +26,7 @@ const IndexPage = ({ data }) => (
       <h2>Why Train With Us?</h2>
       <hr />
     </div>
-    <div className="features flex flex-wrap container items-center mx-auto py-4">
+    <div className="features flex flex-wrap container items-center mx-auto py-4 mb-12">
       <div className="w-full md:w-1/3 px-2 py-2">
         <div className="bg-grey-lightest h-64 rounded flex flex-col items-center justify-center shadow">
           <div className="text-orange">

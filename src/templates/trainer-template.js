@@ -9,18 +9,10 @@ export default function({ data }) {
 
   return (
     <Layout>
-      <div
-        style={{
-          display: "flex",
-          alignItems: "center",
-          justifyContent: "space-inbetween",
-
-          width: "100%",
-        }}
-      >
-        <h1>{name}</h1>
+      <div className="flex container flex-col items-center mx-auto w-1/3 pt-3">
+        <h1 className="pb-3">{name}</h1>
         <Img fixed={fixed} />
-        <p style={{ paddingTop: "2rem" }}>{regimen}</p>
+        <p className="py-3">{regimen}</p>
         <Link to="/trainers">
           <p>Go Back</p>
         </Link>
@@ -36,7 +28,7 @@ export const query = graphql`
       pricePerHour
       regimen
       image {
-        fixed(width: 400) {
+        fixed(width: 250) {
           ...GatsbyContentfulFixed_tracedSVG
         }
       }
