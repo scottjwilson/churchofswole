@@ -31,26 +31,26 @@ function Header({ siteTitle }) {
             isExpanded ? `block` : `hidden`
           } md:block md:flex md:items-center w-full md:w-auto`}
         >
-          <div className="text-sm">
+          <div className="text-sm uppercase">
             <Link
               to="/"
-              className="block mt-4 md:inline-block md:mt-0 mr-6 no-underline text-white"
+              className="block mt-4 md:inline-block md:mt-0 mr-6 no-underline  text-white"
             >
               Home
             </Link>
 
             <Link
-              to="/about"
+              to="/gyms"
               className="block md:inline-block mt-4 md:mt-0 mr-6 no-underline text-white"
             >
-              About
+              Gyms
             </Link>
 
             <Link
-              to="/contact"
+              to="/trainers/"
               className="block md:inline-block mt-4 md:mt-0 no-underline text-white"
             >
-              Contact
+              Trainers
             </Link>
           </div>
         </div>

@@ -7,35 +7,32 @@ import { Link, graphql } from "gatsby"
 export default function TrainerPage({ data }) {
   return (
     <Layout>
-      <h2
+      <h1
         style={{
           display: "flex",
           justifyContent: "center",
-          paddingTop: "1rem",
+          paddingTop: "4rem",
         }}
       >
         Meet Our Trainers
-      </h2>
-      <div style={{ display: "flex" }}>
-        {data.trainer.edges.map(({ node: trainer }) => {
-          return (
-            <div
-              key={trainer.id}
-              style={{
-                padding: "1rem",
-                margin: "1rem 0",
-                justifyItems: "space-inbetween",
-              }}
-            >
-              <Img fixed={trainer.image.fixed} />
-              <h3>{trainer.name}</h3>
-              <h3>${trainer.pricePerHour}/hour</h3>
-              <Link to={`/trainers/${trainer.name}`}>
-                <p>More Info</p>
-              </Link>
-            </div>
-          )
-        })}
+      </h1>
+      <div className="container mx-auto py-8 w-1/3">
+        <div className="flex flex-col justify-center">
+          {data.trainer.edges.map(({ node: trainer }) => {
+            return (
+              <div key={trainer.id} className="flex flex-col items-center py-6">
+                <Img fixed={trainer.image.fixed} />
+                <div className="flex flex-col items-center py-4">
+                  <h3 className="py-1">{trainer.name}</h3>
+                  <h3 className="py-1">${trainer.pricePerHour}/hour</h3>
+                  <Link to={`/trainers/${trainer.name}`}>
+                    <p>More Info</p>
+                  </Link>
+                </div>
+              </div>
+            )
+          })}
+        </div>
       </div>
     </Layout>
   )

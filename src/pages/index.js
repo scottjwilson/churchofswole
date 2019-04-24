@@ -78,14 +78,14 @@ const IndexPage = ({ data }) => (
       <div className="flex flex-col sm:flex-row justify-center mb-6 sm:mb-0">
         <div className="sm:flex-1 lg:flex-initial lg:w-1/4 rounded-t-lg rounded-tr-none bg-white mt-4 flex flex-col">
           <div className="p-6 font-bold text-center">
-            <h2>Noob</h2>
+            <h2>Starter</h2>
           </div>
           <div className="border-0 border-grey-light border-t border-solid text-sm">
             <div className="text-center border-0 border-grey-light border-b border-solid py-4">
-              1 Ice Cream
+              1 Training Session
             </div>
             <div className="text-center border-0 border-grey-light border-b border-solid py-4">
-              Toppings
+              1 Gym
             </div>
             <div className="text-center border-0 border-grey-light border-b border-solid py-4">
               Anayltics
@@ -109,7 +109,7 @@ const IndexPage = ({ data }) => (
               3 Gyms
             </div>
             <div className="text-center border-0 border-grey-light border-b border-solid py-4">
-              4 Personal Training Sessions
+              5 Training Sessions
             </div>
             <div className="text-center border-0 border-grey-light border-b border-solid py-4">
               All Access
@@ -134,13 +134,13 @@ const IndexPage = ({ data }) => (
               Unlock All Gyms
             </div>
             <div className="text-center border-0 border-grey-light border-b border-solid py-4">
-              Access To Smoothie Bar
+              Open Smoothie Bar
             </div>
             <div className="text-center border-0 border-grey-light border-b border-solid py-4">
-              Early Riser Bonus
+              Unlimited Training
             </div>
             <div className="text-center border-0 border-grey-light border-b border-solid py-4">
-              3-Pack Apparel Kit
+              Apparel Kit
             </div>
           </div>
           <div className="w-full text-center px-8 pt-8 text-xl mt-auto">
