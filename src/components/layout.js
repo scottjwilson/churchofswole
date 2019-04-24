@@ -3,7 +3,7 @@ import PropTypes from "prop-types"
 import { StaticQuery, graphql } from "gatsby"
 
 import "./layout.css"
-import Header from "./Header"
+import Header from "./header"
 import Hero from "./hero"
 
 function Layout({ children }) {
