@@ -9,7 +9,7 @@ export default function({ data }) {
 
   return (
     <Layout>
-      <div className="flex container flex-col items-center mx-auto w-1/3 pt-3">
+      <div className="flex container flex-col items-center mx-auto w-1/3 pt-3 h-screen">
         <h1 className="pb-3">{name}</h1>
         <Img fixed={fixed} />
         <p className="py-3">{regimen}</p>

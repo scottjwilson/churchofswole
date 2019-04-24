@@ -4,10 +4,13 @@ import Layout from "../components/layout"
 import Img from "gatsby-image"
 import { graphql } from "gatsby"
 
+import Hero from "../components/hero"
+
 export default function GymPage({ data }) {
   return (
     <Layout>
-      <h1 className="flex justify-center pt-3">Explore Our Gyms</h1>
+      <Hero img={data.img.childImageSharp.fluid} title="Locations" />
+
       <div className="container mx-auto py-2 w-1/3">
         <div className="flex flex-col justify-center">
           {data.gym.edges.map(({ node: gym }) => {
@@ -38,6 +41,13 @@ export const query = graphql`
               ...GatsbyContentfulFixed_tracedSVG
             }
           }
+        }
+      }
+    }
+    img: file(relativePath: { eq: "gymbg1.jpg" }) {
+      childImageSharp {
+        fluid {
+          ...GatsbyImageSharpFluid_tracedSVG
         }
       }
     }

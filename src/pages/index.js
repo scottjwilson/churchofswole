@@ -22,11 +22,11 @@ const IndexPage = ({ data }) => (
         Join Now!
       </button>
     </div>
-    <div className="flex items-center mx-auto pt-12 ">
-      <h2>Why Train With Us?</h2>
+    <div className="flex items-center mx-auto pt-12 pb-12 ">
+      <h1>Why Train With Us?</h1>
       <hr />
     </div>
-    <div className="features flex flex-wrap container items-center mx-auto py-4 mb-12">
+    <div className="flex flex-wrap container items-center mx-auto mb-12">
       <div className="w-full md:w-1/3 px-2 py-2">
         <div className="bg-grey-lightest h-64 rounded flex flex-col items-center justify-center shadow">
           <div className="text-orange">

@@ -3,12 +3,13 @@ import React from "react"
 import Layout from "../components/layout"
 import Img from "gatsby-image"
 import { Link, graphql } from "gatsby"
+import Hero from "../components/hero"
 
 export default function TrainerPage({ data }) {
   return (
     <Layout>
-      <h1 className="flex justify-center pt-3">Meet Our Trainers</h1>
-      <div className="container mx-auto w-1/3">
+      <Hero img={data.img.childImageSharp.fluid} title="Meet Our Trainers" />
+      <div className="container mx-auto w-1/3 pt-6">
         <div className="flex flex-col justify-center">
           {data.trainer.edges.map(({ node: trainer }) => {
             return (
@@ -43,6 +44,13 @@ export const query = graphql`
               ...GatsbyContentfulFixed_tracedSVG
             }
           }
+        }
+      }
+    }
+    img: file(relativePath: { eq: "gymbg2.jpg" }) {
+      childImageSharp {
+        fluid {
+          ...GatsbyImageSharpFluid_tracedSVG
         }
       }
     }
