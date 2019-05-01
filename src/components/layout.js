@@ -34,15 +34,6 @@ function Layout({ children }) {
                   Scott Wilson
                 </a>
               </p>
-
-              <p>
-                <a
-                  href="https://github.com/taylorbryant/gatsby-starter-tailwind"
-                  className="font-bold no-underline text-white"
-                >
-                  GitHub
-                </a>
-              </p>
             </div>
           </footer>
         </div>

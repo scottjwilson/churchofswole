@@ -9,7 +9,8 @@ function Header({ siteTitle }) {
     <nav className="bg-blue-darkest shadow-outline">
       <div className="flex flex-wrap items-center justify-between max-w-3xl mx-auto p-4 md:p-8">
         <Link to="/" className="flex items-center no-underline text-white">
-          <span className="font-bold text-3xl">{siteTitle}</span>
+          <span className="font-bold text-3xl">INFINITE</span>
+          <span className="text-orange text-3xl"> FITNESS </span>
         </Link>
 
         <button

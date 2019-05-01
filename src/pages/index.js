@@ -48,9 +48,8 @@ const IndexPage = ({ data }) => (
           </div>
           <h2 className="py-2">World Class Trainers</h2>
           <p className="text-sm px-4 py-2">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus
-            recusandae perferendis aperiam, necessitatibus aspernatur voluptates
-            laborum esse nisi odio sunt!
+            Our trainers come from all around the world, providing you the best
+            blueprints to your fitness goals.
           </p>
         </div>
       </div>
@@ -62,9 +61,8 @@ const IndexPage = ({ data }) => (
           </div>
           <h2 className="py-2">Ongoing Support</h2>
           <p className="text-sm px-4 py-2">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus
-            recusandae perferendis aperiam, necessitatibus aspernatur voluptates
-            laborum esse nisi odio sunt!
+            Gains go further than just the gym. Meal plans and dietary
+            recommendations are provided to each member.
           </p>
         </div>
       </div>
