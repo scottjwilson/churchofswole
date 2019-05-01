@@ -4,7 +4,7 @@ require("dotenv").config({
 
 module.exports = {
   siteMetadata: {
-    title: `Church of Swole`,
+    title: `Infinite Fitness`,
     description: `Get Initiated Today`,
     author: `scottwil.com`,
   },
